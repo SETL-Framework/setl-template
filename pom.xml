@@ -44,7 +44,7 @@
         </repository>
     </repositories>
 
-    <!--Only need if you will publish a package-->
+    <!--Needed only if you will publish a package-->
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-datacorp-snapshots</id>
