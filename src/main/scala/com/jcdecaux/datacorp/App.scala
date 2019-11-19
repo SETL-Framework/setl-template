@@ -1,5 +1,7 @@
 package com.jcdecaux.datacorp
 
+import com.jcdecaux.datacorp.entity.TestObject
+import com.jcdecaux.datacorp.factory.MyFactory
 import com.jcdecaux.datacorp.spark.DCContext
 
 /**
@@ -10,15 +12,19 @@ object App {
 
   def main(args: Array[String]): Unit = {
 
-    val context = DCContext
-      .builder()
+    val context = DCContext.builder()
       .withDefaultConfigLoader()
       .getOrCreate()
 
     println(context.configLoader.get("app.general.conf"))
     println(context.configLoader.get("app.env-specific.conf"))
 
-    context.newPipeline().describe().run()
+    context.setSparkRepository[TestObject]("testObjectRepository")
 
+    context
+      .newPipeline()
+      .addStage[MyFactory]()
+      .describe()
+      .run()
   }
 }
