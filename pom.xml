@@ -14,7 +14,7 @@
         <java.version>1.8</java.version>
         <scala.version>2.11.12</scala.version>
         <scala.compat.version>2.11</scala.compat.version>
-        <spark.version>2.4.3</spark.version>
+        <spark.version>2.4.4</spark.version>
         <spark.compat.version>2.4</spark.compat.version>
         <dependencies.scope>provided</dependencies.scope>
         <app.environment>local</app.environment>
@@ -77,8 +77,8 @@
         </dependency>
         <dependency>
             <groupId>com.jcdecaux.datacorp</groupId>
-            <artifactId>dc-spark-sdk_${spark.compat.version}</artifactId>
-            <version>0.3.4-SNAPSHOT</version>
+            <artifactId>dc-spark-sdk_${scala.compat.version}</artifactId>
+            <version>0.3.5-SNAPSHOT</version>
         </dependency>
 
         <!-- Test -->
