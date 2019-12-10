@@ -16,8 +16,7 @@ object App {
       .withDefaultConfigLoader()
       .getOrCreate()
 
-    println(context.configLoader.get("app.general.conf"))
-    println(context.configLoader.get("app.env-specific.conf"))
+    println(context.configLoader.get("app.context.spark.spark.app.name"))
 
     context.setSparkRepository[TestObject]("testObjectRepository")
 
