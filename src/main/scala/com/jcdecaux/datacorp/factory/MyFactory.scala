@@ -1,9 +1,9 @@
 package com.jcdecaux.datacorp.factory
 
 import com.jcdecaux.datacorp.entity.TestObject
-import com.jcdecaux.datacorp.spark.annotation.Delivery
-import com.jcdecaux.datacorp.spark.storage.repository.SparkRepository
-import com.jcdecaux.datacorp.spark.transformation.Factory
+import com.jcdecaux.setl.annotation.Delivery
+import com.jcdecaux.setl.storage.repository.SparkRepository
+import com.jcdecaux.setl.transformation.Factory
 import org.apache.spark.sql.{Dataset, SparkSession}
 
 class MyFactory extends Factory[Dataset[TestObject]] {
