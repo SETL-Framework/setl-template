@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jcdecaux.datacorp</groupId>
-    <artifactId>spark-framework-template</artifactId>
+    <artifactId>setl-template</artifactId>
     <version>${revision}${changelist}</version>
 
     <properties>
