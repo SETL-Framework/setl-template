@@ -4,12 +4,10 @@ import com.jcdecaux.datacorp.entity.TestObject
 import com.jcdecaux.setl.annotation.Delivery
 import com.jcdecaux.setl.storage.repository.SparkRepository
 import com.jcdecaux.setl.transformation.Factory
-import org.apache.spark.sql.{Dataset, SparkSession}
+import com.jcdecaux.setl.util.HasSparkSession
+import org.apache.spark.sql.Dataset
 
-class MyFactory extends Factory[Dataset[TestObject]] {
-
-  // Retrieve the active spark session
-  val spark: SparkSession = SparkSession.getActiveSession.get
+class MyFactory extends Factory[Dataset[TestObject]] with HasSparkSession {
 
   @Delivery
   var repo: SparkRepository[TestObject] = _
