@@ -39,26 +39,10 @@
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
         <repository>
-            <id>nexus-datacorp-snapshots</id>
-            <url>https://nexus.jcdecaux.com/repository/snapshots-DATACORP/</url>
-        </repository>
-        <repository>
-            <id>nexus-datacorp-releases</id>
-            <url>https://nexus.jcdecaux.com/repository/releases-DATACORP/</url>
+            <id>ossrh-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
     </repositories>
-
-    <!--Needed only if you will publish a package-->
-    <distributionManagement>
-        <snapshotRepository>
-            <id>nexus-datacorp-snapshots</id>
-            <url>https://nexus.jcdecaux.com/repository/snapshots-DATACORP/</url>
-        </snapshotRepository>
-        <repository>
-            <id>nexus-datacorp-releases</id>
-            <url>https://nexus.jcdecaux.com/repository/releases-DATACORP/</url>
-        </repository>
-    </distributionManagement>
 
     <dependencies>
         <dependency>
