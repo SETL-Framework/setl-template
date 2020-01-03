@@ -1,4 +1,4 @@
-package com.jcdecaux.datacorp.entity
+package com.github.qxzzxq.entity
 
 import com.jcdecaux.setl.annotation.ColumnName
 

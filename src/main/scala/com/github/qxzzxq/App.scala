@@ -1,7 +1,7 @@
-package com.jcdecaux.datacorp
+package com.github.qxzzxq
 
-import com.jcdecaux.datacorp.entity.TestObject
-import com.jcdecaux.datacorp.factory.MyFactory
+import com.github.qxzzxq.entity.TestObject
+import com.github.qxzzxq.factory.MyFactory
 import com.jcdecaux.setl.Setl
 
 /**

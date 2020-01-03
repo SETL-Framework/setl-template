@@ -1,4 +1,4 @@
-package com.jcdecaux.datacorp
+package com.github.qxzzxq
 
 import org.scalatest.FunSuite
 

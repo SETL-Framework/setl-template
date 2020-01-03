@@ -1,6 +1,6 @@
-package com.jcdecaux.datacorp.factory
+package com.github.qxzzxq.factory
 
-import com.jcdecaux.datacorp.entity.TestObject
+import com.github.qxzzxq.entity.TestObject
 import com.jcdecaux.setl.annotation.Delivery
 import com.jcdecaux.setl.storage.repository.SparkRepository
 import com.jcdecaux.setl.transformation.Factory
@@ -10,8 +10,9 @@ import org.apache.spark.sql.Dataset
 class MyFactory extends Factory[Dataset[TestObject]] with HasSparkSession {
 
   @Delivery
-  var repo: SparkRepository[TestObject] = _
-  var output: Dataset[TestObject] = _
+  private[this] val repo = SparkRepository[TestObject]
+
+  private[this] var output: Dataset[TestObject] = _
 
   override def read(): MyFactory.this.type = this
 

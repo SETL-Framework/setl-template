@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.jcdecaux.datacorp</groupId>
+    <groupId>com.github.qxzzxq</groupId>
     <artifactId>setl-template</artifactId>
     <version>${revision}${changelist}</version>
 
@@ -20,16 +20,11 @@
         <app.environment>local</app.environment>
     </properties>
 
-    <organization>
-        <name>JCDecaux SA</name>
-        <url>https://www.jcdecaux.com</url>
-    </organization>
-
     <developers>
         <developer>
             <id>QXZ</id>
             <name>Qin Xuzhou</name>
-            <email>xuzhou.qin@jcdecaux.com</email>
+            <email>me@qinx.dev</email>
         </developer>
     </developers>
 
