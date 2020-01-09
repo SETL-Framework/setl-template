@@ -21,6 +21,7 @@ object App {
 
     setl
       .newPipeline()
+      .benchmark(true)  // to be disabled in the production environment
       .addStage[MyFactory]()
       .describe()
       .run()
