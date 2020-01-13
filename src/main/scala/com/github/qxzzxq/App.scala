@@ -10,11 +10,11 @@ import com.jcdecaux.setl.Setl
  */
 object App {
 
-  def main(args: Array[String]): Unit = {
+  val setl: Setl = Setl.builder()
+    .withDefaultConfigLoader()
+    .getOrCreate()
 
-    val setl = Setl.builder()
-      .withDefaultConfigLoader()
-      .getOrCreate()
+  def main(args: Array[String]): Unit = {
 
     setl
       .setSparkRepository[TestObject]("testObjectRepository")
