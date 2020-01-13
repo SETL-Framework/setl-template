@@ -1,0 +1,17 @@
+sudo: required
+
+language: java
+
+jdk:
+  - openjdk8
+
+install:
+  - echo start install
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script:
+  - echo start build
+  - mvn clean package -Pprovided
+
+after_script:
+  - echo Build completed on `date`
