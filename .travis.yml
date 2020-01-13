@@ -5,13 +5,16 @@ language: java
 jdk:
   - openjdk8
 
+env:
+  - MAV_OPT=--batch-mode
+
 install:
   - echo start install
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn ${MAV_OPT} install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
   - echo start build
-  - mvn clean package -Pprovided
+  - mvn ${MAV_OPT} clean package -Pprovided
 
 after_script:
   - echo Build completed on `date`
