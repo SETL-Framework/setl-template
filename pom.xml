@@ -33,6 +33,10 @@
             <id>maven.apache.org</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+        <repository>
+            <id>ossrh-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -57,7 +61,7 @@
         <dependency>
             <groupId>com.jcdecaux.setl</groupId>
             <artifactId>setl_${scala.compat.version}</artifactId>
-            <version>0.4.0</version>
+            <version>0.4.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Test -->

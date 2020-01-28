@@ -1,7 +1,7 @@
 package com.github.qxzzxq
 
 import com.github.qxzzxq.entity.TestObject
-import com.github.qxzzxq.factory.{MyFactory, TestObjectContainerFactory}
+import com.github.qxzzxq.factory.{AnotherFactory, MyFactory, TestObjectContainerFactory}
 import com.jcdecaux.setl.Setl
 
 /**
@@ -21,10 +21,14 @@ object App {
 
     setl
       .newPipeline()
+      .setInput(222)
       .benchmark(true) // to be disabled in the production environment
       .addStage[MyFactory]()
+      .addStage[AnotherFactory]()
       .addStage[TestObjectContainerFactory]()
       .describe()
       .run()
+      .showDiagram
+
   }
 }
