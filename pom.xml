@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.jcdecaux.setl</groupId>
             <artifactId>setl_${scala.compat.version}</artifactId>
-            <version>0.4.1-SNAPSHOT</version>
+            <version>0.4.1</version>
         </dependency>
 
         <!-- Test -->
