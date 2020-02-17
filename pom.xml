@@ -12,9 +12,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.timezone>UTC</project.timezone>
         <java.version>1.8</java.version>
-        <scala.version>2.11.12</scala.version>
-        <scala.compat.version>2.11</scala.compat.version>
-        <spark.version>2.4.4</spark.version>
+        <scala.version>2.12.10</scala.version>
+        <scala.compat.version>2.12</scala.compat.version>
+        <spark.version>2.4.5</spark.version>
         <spark.compat.version>2.4</spark.compat.version>
         <dependencies.scope>provided</dependencies.scope>
         <app.environment>local</app.environment>
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.jcdecaux.setl</groupId>
             <artifactId>setl_${scala.compat.version}</artifactId>
-            <version>0.4.1</version>
+            <version>0.4.2</version>
         </dependency>
 
         <!-- Test -->
