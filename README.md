@@ -1,5 +1,5 @@
 # SETL template
 
-[![Build Status](https://travis-ci.com/qxzzxq/setl-template.svg?branch=master)](https://travis-ci.com/qxzzxq/setl-template)
+![test](https://github.com/SETL-Developers/setl-template/workflows/test/badge.svg)
 
 You can start using [SETL](https://github.com/JCDecaux/setl) by cloning this project.
