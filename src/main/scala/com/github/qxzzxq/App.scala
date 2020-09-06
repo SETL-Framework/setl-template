@@ -18,6 +18,7 @@ object App {
 
     setl
       .setSparkRepository[TestObject]("testObjectRepository")
+      .setConnector("myConnector", deliveryId = "myConnector")
 
     setl
       .newPipeline()
